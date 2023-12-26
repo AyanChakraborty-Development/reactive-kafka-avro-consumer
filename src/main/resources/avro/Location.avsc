@@ -1,0 +1,790 @@
+{
+  "type": "record",
+  "name": "Location",
+  "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+  "fields": [
+    {
+      "name": "bdas",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "BDA",
+            "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+            "fields": [
+              {
+                "name": "name",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "name": "type",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "name": "bdaType",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              {
+                "name": "alternateCodes",
+                "type": [
+                  "null",
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "record",
+                      "name": "AlternateCode",
+                      "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+                      "fields": [
+                        {
+                          "name": "code",
+                          "type": "string"
+                        },
+                        {
+                          "name": "codeType",
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "url",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "doDAAC",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "fences",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "locationId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "address",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Address",
+          "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+          "fields": [
+            {
+              "name": "city",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "poBox",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "street",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "district",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "latitude",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "longitude",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "territory",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "postalCode",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "countryCode",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "countryName",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "houseNumber",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "addressLine2",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "addressLine3",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "addressQualityCheckIndicator",
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "extOwned",
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    {
+      "name": "extExposed",
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    {
+      "name": "facilityId",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "openingHours",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "bdaType",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "country",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Country",
+          "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "alternateCodes",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "com.apmm.javabackendpoc.kafka.avro.model.AlternateCode"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "geoType",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "parent",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Parent",
+          "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "type",
+              "type": "string"
+            },
+            {
+              "name": "bdaType",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "alternateCodes",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "com.apmm.javabackendpoc.kafka.avro.model.AlternateCode"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parents",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.apmm.javabackendpoc.kafka.avro.model.Parent"
+        }
+      ]
+    },
+    {
+      "name": "validTo",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "logicalType": "date"
+        }
+      ]
+    },
+    {
+      "name": "huluName",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "hsudName",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "latitude",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "portFlag",
+      "type": "boolean"
+    },
+    {
+      "name": "isMaerskCity",
+      "type": "boolean"
+    },
+    {
+      "name": "timeZone",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "longitude",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "validFrom",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "logicalType": "date"
+        }
+      ]
+    },
+    {
+      "name": "restricted",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "description",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "dialingCode",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "bdaLocations",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "BDALocation",
+            "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "type",
+                "type": "string"
+              },
+              {
+                "name": "status",
+                "type": "string"
+              },
+              {
+                "name": "alternateCodes",
+                "type": [
+                  "null",
+                  {
+                    "type": "array",
+                    "items": "com.apmm.javabackendpoc.kafka.avro.model.AlternateCode"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "isDuskCity",
+      "type": "boolean"
+    },
+    {
+      "name": "olsonTimezone",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "alternateCodes",
+      "type": {
+        "type": "array",
+        "items": "com.apmm.javabackendpoc.kafka.avro.model.AlternateCode"
+      }
+    },
+    {
+      "name": "contactDetails",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "facilityDetail",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "FacilityDetail",
+          "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+          "fields": [
+            {
+              "name": "brand",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "gpsFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "gsmFlag",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "vesselAgent",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "facilityTypes",
+              "type": {
+                "type": "array",
+                "items": {
+                  "type": "record",
+                  "name": "FacilityType",
+                  "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+                  "fields": [
+                    {
+                      "name": "code",
+                      "type": "string"
+                    },
+                    {
+                      "name": "name",
+                      "type": "string"
+                    },
+                    {
+                      "name": "masterType",
+                      "type": "string"
+                    },
+                    {
+                      "name": "validThroughDate",
+                      "type": [
+                        "null",
+                        {
+                          "type": "int",
+                          "logicalType": "date"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "telephoneNumber",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "commFacilityType",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "facilityFunction",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "weightLimitYardKg",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "weightLimitCraneKg",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "oceanFreightPricing",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "exportEnquiriesEmail",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "facilityFunctionDesc",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "importEnquiriesEmail",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "internationalDialCode",
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "transportModes",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "facilityServices",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "FacilityService",
+            "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+            "fields": [
+              {
+                "name": "serviceCode",
+                "type": "string"
+              },
+              {
+                "name": "serviceName",
+                "type": "string"
+              },
+              {
+                "name": "validThroughDate",
+                "type": [
+                  "null",
+                  {
+                    "type": "int",
+                    "logicalType": "date"
+                  }
+                ]
+              },
+              {
+                "name": "serviceDescription",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "alternateNames",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "AlternateName",
+            "namespace": "com.apmm.javabackendpoc.kafka.avro.model",
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "status",
+                "type": "string"
+              },
+              {
+                "name": "description",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "subCityParents",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "utcOffsetMinutes",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "workaroundReason",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "daylightSavingEnd",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "logicalType": "date"
+        }
+      ]
+    },
+    {
+      "name": "daylightSavingTime",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "daylightSavingStart",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "logicalType": "date"
+        }
+      ]
+    },
+    {
+      "name": "postalCodeMandatory",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "dialingCodeDescription",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "stateProvinceMandatory",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "daylightSavingShiftMinutes",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ]
+}
